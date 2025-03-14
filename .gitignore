@@ -1,0 +1,29 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos temporários
+*.tmp
+*.temp
+*~
+
+# Logs
+*.log
+
+# Arquivos de ambiente
+.env
+.env.local
+
+# Pastas do projeto
+github-portfolio/
+github/
+portfolio-design/
+src/
+copy-files.ps1
+rename_files.py 
