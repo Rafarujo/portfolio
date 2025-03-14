@@ -1,6 +1,51 @@
 // Dados do portfólio
 const portfolioItems = [
     {
+        title: 'JK Engenharia',
+        description: 'Identidade visual e branding para empresa de engenharia e construção civil',
+        images: [
+            'JK Engenharia/(1).png',
+            'JK Engenharia/(2).png',
+            'JK Engenharia/(3).png',
+            'JK Engenharia/(4).png',
+            'JK Engenharia/(5).png',
+            'JK Engenharia/(6).png',
+            'JK Engenharia/(7).png',
+            'JK Engenharia/(8).png',
+            'JK Engenharia/(9).png',
+            'JK Engenharia/(10).png',
+            'JK Engenharia/(11).png',
+            'JK Engenharia/(12).png',
+            'JK Engenharia/(13).png',
+            'JK Engenharia/(14).png',
+            'JK Engenharia/(15).png',
+            'JK Engenharia/(16).png',
+            'JK Engenharia/(17).png',
+            'JK Engenharia/(18).png',
+            'JK Engenharia/(19).png'
+        ],
+        category: 'Branding & Identidade Visual',
+        type: 'images'
+    },
+    {
+        title: 'Clínica Lora',
+        description: 'Projeto de identidade visual para clínica especializada em psicologia infantil, criando um ambiente acolhedor e lúdico para as crianças',
+        images: [
+            'Clinica Lora/  (1).png',
+            'Clinica Lora/  (2).png',
+            'Clinica Lora/  (3).png',
+            'Clinica Lora/  (4).png',
+            'Clinica Lora/  (5).png',
+            'Clinica Lora/  (6).png',
+            'Clinica Lora/  (7).png',
+            'Clinica Lora/  (8).png',
+            'Clinica Lora/  (9).png',
+            'Clinica Lora/  (10).png'
+        ],
+        category: 'Branding & Identidade Visual',
+        type: 'images'
+    },
+    {
         title: 'Projeto de Design Editorial',
         description: 'Uma série de designs editoriais modernos e impactantes',
         images: [
@@ -63,33 +108,6 @@ const portfolioItems = [
         thumbnail: 'Sol Atacadista da Tecnologia - rebranding/Sol Atacadista da Teconologia.jpg',
         category: 'Motion Design & Branding',
         type: 'video'
-    },
-    {
-        title: 'JK Engenharia',
-        description: 'Identidade visual e branding para empresa de engenharia',
-        images: [
-            'JK Engenharia/1.png',
-            'JK Engenharia/2.png',
-            'JK Engenharia/3.png',
-            'JK Engenharia/4.png',
-            'JK Engenharia/5.png',
-            'JK Engenharia/6.png',
-            'JK Engenharia/7.png',
-            'JK Engenharia/8.png',
-            'JK Engenharia/9.png',
-            'JK Engenharia/10.png',
-            'JK Engenharia/11.png',
-            'JK Engenharia/12.png',
-            'JK Engenharia/13.png',
-            'JK Engenharia/14.png',
-            'JK Engenharia/15.png',
-            'JK Engenharia/16.png',
-            'JK Engenharia/17.png',
-            'JK Engenharia/18.png',
-            'JK Engenharia/19.png'
-        ],
-        category: 'Branding & Identidade Visual',
-        type: 'images'
     }
 ];
 
