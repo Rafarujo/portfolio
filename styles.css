@@ -353,7 +353,20 @@ footer {
     text-align: center;
     padding: 2rem;
     background-color: var(--bg-secondary);
+    margin-top: 2rem;
+}
+
+footer p {
     color: var(--text-color);
+    opacity: 0.8;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+footer p:last-child {
+    opacity: 0.6;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
 }
 
 /* Menu Mobile */
