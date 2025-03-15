@@ -306,6 +306,10 @@ nav {
     border: 1px solid rgba(254, 243, 224, 0.1);
 }
 
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
 .portfolio-item img {
     width: 100%;
     height: 100%;
@@ -314,20 +318,16 @@ nav {
 }
 
 /* Remove botão de play das thumbnails */
-.portfolio-item[data-type="video"]::after {
+.portfolio-item[data-type="video"] img {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.portfolio-item[data-type="video"]::before {
     display: none;
-}
-
-.portfolio-item[data-type="video"] video::-webkit-media-controls-start-playback-button {
-    display: none !important;
-}
-
-.portfolio-item[data-type="video"] video::-webkit-media-controls {
-    display: none !important;
-}
-
-.portfolio-item:hover {
-    transform: translateY(-5px);
 }
 
 .portfolio-item[data-type="link"]::after {
