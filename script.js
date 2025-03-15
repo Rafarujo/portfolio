@@ -1,6 +1,14 @@
 // Dados do portfólio
 const portfolioItems = [
     {
+        title: 'Corrida de Fiat Uno',
+        description: 'Jogo desenvolvido em Unity onde você controla um Fiat Uno pelas ruas da cidade. Projeto que combina programação e game design.',
+        thumbnail: 'CorridaUno/thumbnail.jpg',
+        category: 'Game Design & Desenvolvimento',
+        type: 'link',
+        url: 'https://rafarujo.github.io/CorridaUno/'
+    },
+    {
         title: 'JK Engenharia',
         description: 'Identidade visual e branding para empresa de engenharia e construção civil',
         images: [
@@ -118,9 +126,10 @@ function loadPortfolio() {
     portfolioItems.forEach((item, index) => {
         const portfolioItem = document.createElement('div');
         portfolioItem.className = 'portfolio-item fade-in';
+        portfolioItem.setAttribute('data-type', item.type);
         
-        // Verifica se é um projeto de vídeo ou imagem
-        const thumbnailSrc = item.type === 'video' ? item.thumbnail : item.images[0];
+        // Verifica se é um projeto de vídeo, imagem ou link
+        const thumbnailSrc = item.type === 'video' ? item.thumbnail : (item.type === 'images' ? item.images[0] : item.thumbnail);
         
         portfolioItem.innerHTML = `
             <img src="${thumbnailSrc}" alt="${item.title}">
@@ -131,7 +140,13 @@ function loadPortfolio() {
             </div>
         `;
         
-        portfolioItem.addEventListener('click', () => openModal(index));
+        // Adiciona o evento de clique apropriado baseado no tipo
+        if (item.type === 'link') {
+            portfolioItem.addEventListener('click', () => window.open(item.url, '_blank'));
+        } else {
+            portfolioItem.addEventListener('click', () => openModal(index));
+        }
+        
         portfolioGrid.appendChild(portfolioItem);
     });
 }
