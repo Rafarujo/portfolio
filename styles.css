@@ -306,14 +306,28 @@ nav {
     border: 1px solid rgba(254, 243, 224, 0.1);
 }
 
-.portfolio-item:hover {
-    transform: translateY(-5px);
-}
-
 .portfolio-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Remove botão de play das thumbnails */
+.portfolio-item[data-type="video"]::after {
+    display: none;
+}
+
+.portfolio-item[data-type="video"] video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+
+.portfolio-item[data-type="video"] video::-webkit-media-controls {
+    display: none !important;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
 }
 
 .portfolio-item[data-type="link"]::after {
