@@ -3,7 +3,7 @@ const portfolioItems = [
     {
         title: 'Corrida de Fiat Uno',
         description: 'Jogo desenvolvido em Unity onde você controla um Fiat Uno pelas ruas da cidade. Projeto que combina programação e game design.',
-        thumbnail: 'CorridaUno/thumbnail.jpg',
+        thumbnail: 'CorridaUno/thumbnail.png',
         category: 'Game Design & Desenvolvimento',
         type: 'link',
         url: 'https://rafarujo.github.io/CorridaUno/'
