@@ -317,6 +317,32 @@ nav {
     transition: transform 0.3s ease;
 }
 
+/* Esconder botão de play */
+.portfolio-item[data-type="video"]::before {
+    display: none !important;
+}
+
+.portfolio-item[data-type="video"] img {
+    opacity: 1;
+}
+
+/* Portfolio Item Info */
+.portfolio-item-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(10, 10, 10, 0.9);
+    color: var(--text-color);
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-item-info {
+    opacity: 1;
+}
+
 /* Remove botão de play das thumbnails */
 .portfolio-item[data-type="video"] img {
     pointer-events: none;
